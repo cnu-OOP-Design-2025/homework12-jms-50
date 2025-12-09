@@ -1,6 +1,6 @@
  #!/bin/bash
 
-g++ main.cpp -o main 2> /dev/null
+g++ main.cpp -o main #2> /dev/null
 ./main > "Test/output1.txt"
 
 if ! diff "Test/output1.txt" "Test/expected1.txt" > /dev/null; then
